@@ -16,7 +16,7 @@ export const Main = ({
 }) => {
   let inViewOptions = {
     threshold: 0,
-    rootMargin: `${isWindowSmall ? '-200px' : '-300px'} 0px -100px 0px`,
+    rootMargin: `${isWindowSmall ? '-100px' : '-200px'} 0px -50px 0px`,
   };
 
   const { ref: aboutRef, inView: aboutInView } = useInView(inViewOptions);

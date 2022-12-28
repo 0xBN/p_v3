@@ -44,10 +44,14 @@ function App() {
     });
   };
 
+  const oldSettings = `md:grid md:max-w-7xl md:grid-cols-4`;
+
   return (
     <div
-      className={`App mx-auto min-h-screen grid-cols-4 scroll-smooth  md:grid md:max-w-7xl 
-       ${Boolean(darkMode) && 'dark'} font-display`}
+      className={`App mx-auto min-h-screen scroll-smooth  
+       ${Boolean(darkMode) && 'dark'} font-display ${false && oldSettings} ${
+        true && `md:flex`
+      } `}
     >
       <Header
         darkMode={darkMode}

@@ -22,7 +22,7 @@ export const Header = ({
       custom={1}
       animate={slideRight}
       className={`sticky top-0 z-30 bg-navLight shadow-sm shadow-gray-500 dark:bg-navDark dark:text-white dark:shadow-md md:relative md:max-h-screen
-      md:overflow-y-auto`}
+      md:min-w-[250px] md:overflow-y-auto`}
     >
       <NavBar
         toggleTheme={toggleTheme}
