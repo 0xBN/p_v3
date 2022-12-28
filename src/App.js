@@ -44,14 +44,13 @@ function App() {
     });
   };
 
-  const oldSettings = `md:grid md:max-w-7xl md:grid-cols-4`;
+  const testSettings = `overflow-clip`;
 
   return (
     <div
       className={`App mx-auto min-h-screen scroll-smooth  
-       ${Boolean(darkMode) && 'dark'} font-display ${false && oldSettings} ${
-        true && `md:flex`
-      } `}
+       ${Boolean(darkMode) && 'dark'}   md:flex
+      ${true && testSettings}`}
     >
       <Header
         darkMode={darkMode}
