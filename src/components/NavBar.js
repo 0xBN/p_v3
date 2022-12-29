@@ -22,7 +22,7 @@ export const NavBar = ({
   };
 
   return (
-    <nav className='flex flex-row-reverse justify-between md:min-w-full md:flex-col md:text-right'>
+    <nav className='flex flex-row-reverse justify-between md:min-w-full md:flex-col md:items-end md:text-right'>
       {/* MOBILE ONLY  */}
       <MenuButton toggleMenu={toggleMenu} showMenu={showMenu} />
       <MobileNameHeader
@@ -30,8 +30,9 @@ export const NavBar = ({
         setShowMenu={setShowMenu}
         setCurrentSection={setCurrentSection}
       />
-
-      <ProfilePicture darkMode={darkMode} />
+      <div className='mr-8 mt-8 hidden w-1/2 overflow-clip rounded-full md:block'>
+        <ProfilePicture darkMode={darkMode} />
+      </div>
       <Menu
         showMenu={showMenu}
         setShowMenu={setShowMenu}
